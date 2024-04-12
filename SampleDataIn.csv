@@ -1,0 +1,153 @@
+﻿Operation_Category;Operation_Main_Category;Operation_Sub_Category;Service_Deliverable;Used_Today;Implementation_Next_12_Months;Environment;KPI_Name;KPI_Target_Description;KPI_Target;KPI_Measurement_Period;KPI_Category_WHY;Exceptions;KPI_Implementation_Complexity;KPI_Implementation;KPI_Blockers;Priority_Phase_Implementation;Operational_Task;Operational_Task_Amount;OprTask_Frequency;PreReq_Operational_Task;KPI_Name_ShortName;KPI_Name_Prefix;KPI_Number
+Identity - Legacy;Identity;Legacy;Active Directory (IT);Yes;Exist Already;IT;KPI-Identity-AD-1;AD identities on user-level must be disabled if inactive more than;90 days;Monthly;Security;"Decommisioned users with high risc status like top-mgmt
+End-users on leave due to maternity";Low;"Script must be developed.
+Script must be automated for daily run";;Phase 0 Minimum Baseline;"Automation jobs must be validated
+Exceptions must be evaluated for any adjustments";1;Monthly;Automation script must be built that delivers the required automation;AD;KPI-Identity-AD;1
+Identity - Legacy;Identity;Legacy;Active Directory (IT);Yes;Exist Already;IT;KPI-Identity-AD-2;AD identities on admin-levels must be disabled, if inactive more than;60 days;Monthly;Security;"Break-class service accounts
+Tier-0 admin accounts";Low;"Script must be developed.
+Script must be automated for daily run";;Phase 0 Minimum Baseline;"Automation jobs must be validated
+Exceptions must be evaluated for any adjustments";1;Monthly;Automation script must be built that delivers the required automation;AD;KPI-Identity-AD;2
+Identity - Legacy;Identity;Legacy;Active Directory (IT);Yes;Exist Already;IT;KPI-Identity-AD-3;AD identities on user-level must be deleted if inactive more than;180 days;Monthly;Security;"Decommisioned users with high risc status like top-mgmt
+End-users on leave due to maternity";Low;"Script must be developed.
+Script must be automated for daily run";;Phase 0 Minimum Baseline;"Automation jobs must be validated
+Exceptions must be evaluated for any adjustments";1;Monthly;Automation script must be built that delivers the required automation;AD;KPI-Identity-AD;3
+Identity - Legacy;Identity;Legacy;Active Directory (IT);Yes;Exist Already;IT;KPI-Identity-AD-4;AD identities on admin-levels must be deleted, if inactive more than;180 days;Monthly;Security;"Break-class service accounts
+Tier-0 admin accounts";Low;"Script must be developed.
+Script must be automated for daily run";;Phase 0 Minimum Baseline;"Automation jobs must be validated
+Exceptions must be evaluated for any adjustments";1;Monthly;Automation script must be built that delivers the required automation;AD;KPI-Identity-AD;4
+Identity - Entra (Cloud);Identity;Entra (Cloud);Cloud Identity;Yes;Exist Already;IT;KPI-Identity-CloudIdentity-1;Cloud-only identities on user-level must be disabled if inactive more than;90 days;Monthly;Security;"Decommisioned users with high risc status like top-mgmt
+End-users on leave due to maternity";Low;"Script must be developed.
+Script must be automated for daily run";;Phase 0 Minimum Baseline;"Automation jobs must be validated
+Exceptions must be evaluated for any adjustments";1;Monthly;Automation script must be built that delivers the required automation;CloudIdentity;KPI-Identity-CloudIdentity;1
+Identity - Entra (Cloud);Identity;Entra (Cloud);Cloud Identity;Yes;Exist Already;IT;KPI-Identity-CloudIdentity-2;Cloud-only identities on admin-levels must be disabled, if inactive more than;60 days;Monthly;Security;"Break-class service accounts
+Tier-0 admin accounts";Low;"Script must be developed.
+Script must be automated for daily run";;Phase 0 Minimum Baseline;"Automation jobs must be validated
+Exceptions must be evaluated for any adjustments";1;Monthly;Automation script must be built that delivers the required automation;CloudIdentity;KPI-Identity-CloudIdentity;2
+Identity - Entra (Cloud);Identity;Entra (Cloud);Cloud Identity;Yes;Exist Already;IT;KPI-Identity-CloudIdentity-3;Cloud-only identities on user-level must be deleted if inactive more than;180 days;Monthly;Security;"Decommisioned users with high risc status like top-mgmt
+End-users on leave due to maternity";Low;"Script must be developed.
+Script must be automated for daily run";;Phase 0 Minimum Baseline;"Automation jobs must be validated
+Exceptions must be evaluated for any adjustments";1;Monthly;Automation script must be built that delivers the required automation;CloudIdentity;KPI-Identity-CloudIdentity;3
+Identity - Entra (Cloud);Identity;Entra (Cloud);Cloud Identity;Yes;Exist Already;IT;KPI-Identity-CloudIdentity-4;Cloud-only identities on admin-levels must be deleted, if inactive more than;180 days;Monthly;Security;"Break-class service accounts
+Tier-0 admin accounts";Low;"Script must be developed.
+Script must be automated for daily run";;Phase 0 Minimum Baseline;"Automation jobs must be validated
+Exceptions must be evaluated for any adjustments";1;Monthly;Automation script must be built that delivers the required automation;CloudIdentity;KPI-Identity-CloudIdentity;4
+Identity - Development;Identity;Development;Application/Service Identity (Azure);Yes;Exist Already;IT;KPI-Identity-AzKV-1;Percentage of secrets, certificates, and keys stored in Azure KeyVaults versus other less secure storage mechanisms;>98% compliance;Monthly;Security;;Medium;Code review process as part of deployment;"Do we have control of all dev-reposities?
+Do we have any central solution to check the code like defender for cloud ?";Phase 0 Minimum Baseline;Secrets and Certificates Rotation: Regularly rotate secrets and certificates according to the organization's policy to minimize risks associated with stale credentials;1;Monthly;Defender for Cloud must be enabled;AzKV;KPI-Identity-AzKV;1
+Identity - Development;Identity;Development;Application/Service Identity (Azure);Yes;Exist Already;IT;KPI-Identity-AzKV-2;Percentage of Key Vaults configured with backup and recovery options (e.g., soft delete and purge protection);100% of Key Vaults configured for recovery readiness.;Monthly;Security;;Low;"Azure Policy
+Defender for Cloud built-in view";;Phase 0 Minimum Baseline;Defender for Cloud Security Recommendations must be evaluated to verify, that Azure Keyvault is protected and used according to best practice - and identities are stored correctly in keyvault;1;Monthly;Defender for Cloud must be enabled;AzKV;KPI-Identity-AzKV;2
+Identity - Development;Identity;Development;Application/Service Identity (Azure);Yes;Exist Already;IT;KPI-Identity-AzKV-3;Monitor and reduce the number of certificates nearing expiry without renewal plans.;0 certificates within 30 days of expiry without a renewal action plan.;Monthly;Security;;Low;"Script must be developed.
+Script must be automated for daily run";;Phase 0 Minimum Baseline;"Defender for Cloud Security Recommendations must be evaluated to verify, that Azure Keyvault is protected and used according to best practice - and identities are stored correctly in keyvault
+
+Certificate Management: Monitor the expiry dates of certificates stored in Key Vaults and initiate the renewal process for those nearing expiry to avoid service disruptions.";2;Monthly;Defender for Cloud must be enabled;AzKV;KPI-Identity-AzKV;3
+Identity - Development;Identity;Development;Application/Service Identity (Azure);Yes;Exist Already;IT;KPI-Identity-AzKV-4;Measure the percentage of Key Vaults integrated with Azure AD for authentication and access management. ;100% integration;Monthly;Configuration;;;;;;;;Monthly;;AzKV;KPI-Identity-AzKV;4
+Identity - Integration;Identity;Integration;Application/Service Identity (Entra ID);Yes;Exist Already;IT;KPI-Identity-Entra-SSO-1;Percentage of applications integrated with Entra ID using SAML for authentication.;>95%;Monthly;Configuration;;;;;;Regularly review and update SAML configurations for each integrated application to ensure compliance with security policies;1;Monthly;;Entra-SSO;KPI-Identity-Entra-SSO;1
+Identity - Integration;Identity;Integration;Application/Service Identity (Entra ID);Yes;Exist Already;IT;KPI-Identity-Entra-SSO-2;Success rate of SAML authentication requests;>99% success rate;Monthly;Availability;;;;;;Monitor the performance and success rates of SAML authentication requests to identify and resolve integration issues;1;Monthly;;Entra-SSO;KPI-Identity-Entra-SSO;2
+Identity - Integration;Identity;Integration;Application/Service Identity (Entra ID);Yes;Exist Already;IT;KPI-Identity-Entra-SSO-3;Accuracy of automatic user provisioning and deprovisioning in SAML-integrated applications.;100% accuracy;Monthly;Configuration;;;;;;Monitor and adjust automatic provisioning workflows to ensure they accurately reflect user status changes;1;Monthly;;Entra-SSO;KPI-Identity-Entra-SSO;3
+Identity - Integration;Identity;Integration;Application/Service Identity (Entra ID);Yes;Exist Already;IT;KPI-Identity-Entra-SSO-4;Percentage of users utilizing SSO to access SAML-integrated applications.; >90%;Monthly;Security;;;;;;;1;Monthly;;Entra-SSO;KPI-Identity-Entra-SSO;4
+Identity - Integration;Identity;Integration;Application/Service Identity (Entra ID);Yes;Exist Already;IT;KPI-Identity-Entra-SSO-5;Completeness of logs and audit trails for access and authentication events. ;100% completeness;Monthly;Security;;;;;;;1;Monthly;;Entra-SSO;KPI-Identity-Entra-SSO;5
+Identity - Automation;Identity;Automation;On/Off Boarding Automation;Yes;Exist Already;IT;KPI-Identity-OnOffBoarding-1;;;Monthly;;;;;;;;1;Monthly;;OnOffBoarding;KPI-Identity-OnOffBoarding;1
+Productivity - M365;Productivity;M365;Document Collaboration;Yes;Exist Already;IT;KPI-Productivity-DocCollab-1;The percentage of recommended or critical updates applied within a specified timeframe;100% of critical updates applied within 1 week of release;Monthly;Security;;;;;;"All required changes from Microsoft must be evaluated and structured into 
+a) productivity gain (important) 
+b) productivity gain (optional) 
+c) infrastructure/security improvement (business impact)
+d) infrastructure/security change (no impact)
+
+Recommendations must be presented in Governance team.
+Decissions must be detailed and implemented";2;Monthly;;DocCollab;KPI-Productivity-DocCollab;1
+Productivity - M365;Productivity;M365;Document Collaboration;Yes;Exist Already;IT;KPI-Productivity-DocCollab-2;The rate at which users start utilizing new features or services after they have been introduced;Increase user adoption of new features by 20% within the first month of release.;Monthly;Adoption;;;;;;"All required changes from Microsoft must be evaluated and structured into 
+a) productivity gain (important) 
+b) productivity gain (optional) 
+c) infrastructure/security improvement (business impact)
+d) infrastructure/security change (no impact)
+
+Recommendations must be presented in Governance team.
+Decissions must be detailed and implemented";2;Monthly;;DocCollab;KPI-Productivity-DocCollab;2
+Productivity - M365;Productivity;M365;Mail;Yes;Exist Already;IT;KPI-Productivity-Mail-1;The percentage of recommended or critical updates applied within a specified timeframe;100% of critical updates applied within 1 week of release;Monthly;Security;;;;;;"All required changes from Microsoft must be evaluated and structured into 
+a) productivity gain (important) 
+b) productivity gain (optional) 
+c) infrastructure/security improvement (business impact)
+d) infrastructure/security change (no impact)
+
+Recommendations must be presented in Governance team.
+Decissions must be detailed and implemented";2;Monthly;;Mail;KPI-Productivity-Mail;1
+Productivity - M365;Productivity;M365;Mail;Yes;Exist Already;IT;KPI-Productivity-Mail-2;The rate at which users start utilizing new features or services after they have been introduced;Increase user adoption of new features by 20% within the first month of release.;Monthly;Adoption;;;;;;"All required changes from Microsoft must be evaluated and structured into 
+a) productivity gain (important) 
+b) productivity gain (optional) 
+c) infrastructure/security improvement (business impact)
+d) infrastructure/security change (no impact)
+
+Recommendations must be presented in Governance team.
+Decissions must be detailed and implemented";2;Monthly;;Mail;KPI-Productivity-Mail;2
+Productivity - M365;Productivity;M365;Collaboration / Chat;Yes;Exist Already;IT;KPI-Productivity-Chat-1;The percentage of recommended or critical updates applied within a specified timeframe;100% of critical updates applied within 1 week of release;Monthly;Security;;;;;;"All required changes from Microsoft must be evaluated and structured into 
+a) productivity gain (important) 
+b) productivity gain (optional) 
+c) infrastructure/security improvement (business impact)
+d) infrastructure/security change (no impact)
+
+Recommendations must be presented in Governance team.
+Decissions must be detailed and implemented";2;Monthly;;Chat;KPI-Productivity-Chat;1
+Productivity - M365;Productivity;M365;Collaboration / Chat;Yes;Exist Already;IT;KPI-Productivity-Chat-2;The rate at which users start utilizing new features or services after they have been introduced;Increase user adoption of new features by 20% within the first month of release.;Monthly;Adoption;;;;;;"All required changes from Microsoft must be evaluated and structured into 
+a) productivity gain (important) 
+b) productivity gain (optional) 
+c) infrastructure/security improvement (business impact)
+d) infrastructure/security change (no impact)
+
+Recommendations must be presented in Governance team.
+Decissions must be detailed and implemented";2;Monthly;;Chat;KPI-Productivity-Chat;2
+Productivity - M365;Productivity;M365;Automation;Yes;Exist Already;IT;KPI-Productivity-Automation-1;All required changes from Microsoft must be evaluated and prepared in advance, if the changes will not have unforeseen impact on the business ;All Changes;Monthly;Change Management;;;;;;"All required changes from Microsoft must be evaluated and structured into 
+a) productivity gain (important) 
+b) productivity gain (optional) 
+c) infrastructure/security improvement (business impact)
+d) infrastructure/security change (no impact)
+
+Recommendations must be presented in Governance team.
+Decissions must be detailed and implemented";2;Monthly;;Automation;KPI-Productivity-Automation;1
+Security - Network;Security;Network;Layer-7 Firewall (IT);Yes;Exist Already;IT;KPI-Security-Fw-IT-1;The percentage of firewalls updated with the latest security patches within a specified timeframe after release;Maintain 100% compliance with updates applied within 1 week of release;Monthly;Security;;;;;;Apply security patches and updates to firewall firmware and software to address vulnerabilities and enhance security features;1;Monthly;;Fw-IT;KPI-Security-Fw-IT;1
+Security - Network;Security;Network;Layer-7 Firewall (IT);Yes;Exist Already;IT;KPI-Security-Fw-IT-2;The percentage of firewall rules reviewed and optimized for performance and security;Review and optimize 100% of firewall rules annually, with at least 8% reviewed monthly;Monthly;Security;;;;;;"Conduct detailed audits of firewall configurations to ensure they align with best practices and the organization's security policies
+
+Review logs and reports of unauthorized access attempts to understand attack patterns and improve firewall rules and configurations
+
+Analyze and optimize firewall rules to ensure they are efficient, effective, and do not introduce unnecessary performance bottlenecks or security risks.";3;Monthly;;Fw-IT;KPI-Security-Fw-IT;2
+Security - Network;Security;Network;Layer-7 Firewall ;Yes;Exist Already;IT;KPI-Security-Fw-Az-1;The percentage of firewalls updated with the latest security patches within a specified timeframe after release;Maintain 100% compliance with updates applied within 1 week of release;Monthly;Security;;;;;;Apply security patches and updates to firewall firmware and software to address vulnerabilities and enhance security features;1;Monthly;;Fw-Az;KPI-Security-Fw-Az;1
+Security - Network;Security;Network;Layer-7 Firewall ;Yes;Exist Already;IT;KPI-Security-Fw-Az-2;The percentage of firewall rules reviewed and optimized for performance and security;Review and optimize 100% of firewall rules annually, with at least 8% reviewed monthly;Monthly;Security;;;;;;"Conduct detailed audits of firewall configurations to ensure they align with best practices and the organization's security policies
+
+Review logs and reports of unauthorized access attempts to understand attack patterns and improve firewall rules and configurations
+
+Analyze and optimize firewall rules to ensure they are efficient, effective, and do not introduce unnecessary performance bottlenecks or security risks.";3;Monthly;;Fw-Az;KPI-Security-Fw-Az;2
+Security - Network;Security;Network;Layer-7 Firewall (OT);Yes;Exist Already;OT;KPI-Security-Fw-OT-1;The percentage of firewalls updated with the latest security patches within a specified timeframe after release;Maintain 100% compliance with updates applied within 1 week of release;Monthly;Security;;;;;;Apply security patches and updates to firewall firmware and software to address vulnerabilities and enhance security features;1;Monthly;;Fw-OT;KPI-Security-Fw-OT;1
+Security - Network;Security;Network;Layer-7 Firewall (OT);Yes;Exist Already;OT;KPI-Security-Fw-OT-2;The percentage of firewall rules reviewed and optimized for performance and security;Review and optimize 100% of firewall rules annually, with at least 8% reviewed monthly;Monthly;Security;;;;;;"Conduct detailed audits of firewall configurations to ensure they align with best practices and the organization's security policies
+
+Review logs and reports of unauthorized access attempts to understand attack patterns and improve firewall rules and configurations
+
+Analyze and optimize firewall rules to ensure they are efficient, effective, and do not introduce unnecessary performance bottlenecks or security risks.";3;Monthly;;Fw-OT;KPI-Security-Fw-OT;2
+Security - Network;Security;Network;Network Authentication LAN & WIFI;Yes;Exist Already;Shared IT/OT;KPI-Security-NetAuth-1;The percentage of successful authentications out of the total authentication attempts;Maintain a success rate of 98% or higher;Monthly;Availability;;;;;;;;Monthly;;NetAuth;KPI-Security-NetAuth;1
+Security - Network;Security;Network;Network Authentication LAN & WIFI;Yes;Exist Already;Shared IT/OT;KPI-Security-NetAuth-2;The average time taken for the authentication process to complete;Average authentication time of less than 5 seconds;Daily;Performance;;;;;;Monitor the performance of the RADIUS and 802.1X authentication systems to ensure they meet the expected authentication success rates and time frames;1;Daily;;NetAuth;KPI-Security-NetAuth;2
+Security - Network;Security;Network;Network Authentication LAN & WIFI;Yes;Exist Already;Shared IT/OT;KPI-Security-NetAuth-3;The uptime percentage of the authentication services;Achieve 99.9% system availability;Daily;Availability;;;;;;Perform regular checks and maintenance to ensure high availability and uptime of authentication services;1;Daily;;NetAuth;KPI-Security-NetAuth;3
+Security - Network;Security;Network;Network Authentication LAN & WIFI;Yes;Exist Already;Shared IT/OT;KPI-Security-NetAuth-4;The number of detected unauthorized access attempts;0 successful unauthorized access attempts;Daily;Security;;;;;;Monitor the performance of the RADIUS and 802.1X authentication systems to ensure they meet the expected authentication success rates and time frames;1;Daily;;NetAuth;KPI-Security-NetAuth;4
+Security - Network;Security;Network;Network Authentication LAN & WIFI;Yes;Exist Already;Shared IT/OT;KPI-Security-NetAuth-5;Ensure platform is updated related to security updates;Maintain 100% compliance with updates applied within 1 week of release;Monthly;Security;;;;;;Conduct security audits of the authentication infrastructure to identify vulnerabilities and ensure compliance with security policies and standards.;1;Monthly;;NetAuth;KPI-Security-NetAuth;5
+Security - Network;Security;Network;Network Authentication LAN & WIFI;Yes;Exist Already;Shared IT/OT;KPI-Security-NetAuth-6;The average time taken to respond to and resolve incidents affecting the authentication services;Average response time of less than 1 hour and resolution time of less than 4 hours for critical incidents;Monthly;Incident Management;;;;;;;;Monthly;;NetAuth;KPI-Security-NetAuth;6
+Security - Network;Security;Network;DDOS Protection;No;Yes, expected;IT;KPI-Security-DDOS-1;The average time it takes to detect a DDoS attack from its initiation;Reduce detection time to under 5 minutes;Monthly;Incident Management;;;;;;;;Monthly;;DDOS;KPI-Security-DDOS;1
+Security - Network;Security;Network;DDOS Protection;No;Yes, expected;IT;KPI-Security-DDOS-2;The average time it takes to mitigate a DDoS attack once it has been detected;Reduce mitigation time to under 10 minutes;Monthly;Incident Management;;;;;;;;Monthly;;DDOS;KPI-Security-DDOS;2
+Security - Network;Security;Network;DDOS Protection;No;Yes, expected;IT;KPI-Security-DDOS-3;The percentage of time that the system remains fully operational and available during and after DDoS attacks;Maintain system availability at 99.9% even during DDoS events;Monthly;Availability;;;;;;;;Monthly;;DDOS;KPI-Security-DDOS;3
+Security - Network;Security;Network;DDOS Protection;No;Yes, expected;IT;KPI-Security-DDOS-4;The ability to reduce the impact of DDoS attacks on users and services;Keep the user impact rate as close to zero as possible during attacks;Monthly;Incident Management;;;;;;;;Monthly;;DDOS;KPI-Security-DDOS;4
+Security - Identity;Security;Identity;Legacy Identity Security XDR;Yes;Exist Already;IT;KPI-Security-AD-1;The number of detected threats to the Active Directory environment per month;Maintain or increase the detection rate, aiming for early detection of 100% of known threat patterns;Monthly;Security;;;;;;"Regularly review and update threat detection policies based on the latest threat intelligence and observed attack patterns
+
+Perform a detailed analysis of all detected threats and the response actions taken to understand the effectiveness of current strategies";2;Monthly;;AD;KPI-Security-AD;1
+Security - Identity;Security;Identity;Legacy Identity Security XDR;Yes;Exist Already;IT;KPI-Security-AD-2;The average time taken from the detection of a threat to its resolution;Reduce average resolution time to under 4 hours for critical threats;Monthly;Incident Management;;;;;;;;Monthly;;AD;KPI-Security-AD;2
+Security - Identity;Security;Identity;Legacy Identity Security XDR;Yes;Exist Already;IT;KPI-Security-AD-3;The percentage of alerts that are determined to be false positives;Reduce the false positive rate to less than 2%;Monthly;Incident Management;;;;;;Analyze incidents classified as false positives to refine detection algorithms and reduce the rate of false alarms;1;Monthly;;AD;KPI-Security-AD;3
+Security - Identity;Security;Identity;Legacy Identity Security XDR;Yes;Exist Already;IT;KPI-Security-AD-4;The accuracy of behavioral analytics in identifying anomalous activities that could indicate threats;Achieve over 95% accuracy in anomaly detection;Monthly;Incident Management;;;;;;Review the results from the User and Entity Behavior Analytics (UEBA) to ensure that anomalous activities are accurately identified and do not represent normal behavior;1;Monthly;;AD;KPI-Security-AD;4
+Security - Identity;Security;Identity;Legacy Identity Security XDR;Yes;Exist Already;IT;KPI-Security-AD-5;The percentage of time the Defender for Identity service is fully operational and monitoring without any disruptions;Maintain 99.9% system availability;Monthly;Availability;;;;;;"Conduct regular health checks of the Defender for Identity infrastructure to ensure it is operating optimally and without any issues
+
+Organize training sessions for IT security teams on the latest features and best practices for using Microsoft Defender for Identity effectively";2;Monthly;;AD;KPI-Security-AD;5
+Security - Identity;Security;Identity;Identity Validation & Access;Yes;Exist Already;IT;KPI-Security-CondAcc-1;The percentage of sign-in attempts that fully comply with the defined Conditional Access policies;Aim for 99% compliance rate or higher;Monthly;Availability;;;;;;"Perform a detailed analysis of access and authentication logs to identify patterns that may indicate attempted security breaches or areas where policies may be too restrictive or lenient
+
+Gather feedback from users about their experiences with Conditional Access policies, focusing on any challenges faced during authentication or access attempts. Use this feedback to refine policies and balance security with usability
+
+Provide ongoing training for users on security best practices, the importance of Conditional Access policies, and how to securely manage their credentials, especially in relation to MFA requirements";3;Monthly;;CondAcc;KPI-Security-CondAcc;1
+Security - Identity;Security;Identity;Identity Validation & Access;Yes;Exist Already;IT;KPI-Security-CondAcc-1;The rate at which MFA prompts are successfully completed as a part of Conditional Access requirements;Maintain a successful MFA rate of 95% or higher;Monthly;Security;;;;;;;;Monthly;;CondAcc;KPI-Security-CondAcc;1
+Security - Identity;Security;Identity;Identity Validation & Access;Yes;Exist Already;IT;KPI-Security-CondAcc-1;The percentage of access denials due to failure to meet Conditional Access policies;Keep the access denial rate below 5% to ensure minimal disruption to legitimate users;Monthly;Configuration;;;;;;;;Monthly;;CondAcc;KPI-Security-CondAcc;1
+Security - Identity;Security;Identity;Identity Validation & Access;Yes;Exist Already;IT;KPI-Security-CondAcc-1;The frequency and efficiency of Conditional Access policy reviews and updates to adapt to new security threats or changes in organizational policies;Conduct comprehensive policy reviews and make necessary updates monthly;Monthly;Security;;;;;;Regularly review Conditional Access policies to ensure they align with current security threats, organizational changes, and compliance requirements. Update policies based on recent security trends, user feedback, and IT infrastructure changes;1;Monthly;;CondAcc;KPI-Security-CondAcc;1
+Security - Identity;Security;Identity;Just-In-Time Access & Delegation;Yes;Exist Already;IT;KPI-Security-JIT-1;The percentage of privileged access activations that use JIT capabilities to limit standing privileges;Aim for a JIT activation rate of 95% or higher;Monthly;Security;;;;;;Regularly review Just-in-Time access policies to ensure they align with the current security posture and business needs. Adjust policies to refine access control and minimize unnecessary privileged access;1;Monthly;;JIT;KPI-Security-JIT;1
+Security - Identity;Security;Identity;Just-In-Time Access & Delegation;Yes;Exist Already;IT;KPI-Security-JIT-2;The number of attempts to gain privileged access without approval through PIM;Maintain 0 unapproved privileged access attempts;Monthly;Security;;;;;;Continuously monitor and analyze all privileged access attempts, focusing on identifying unauthorized or suspicious activities. Use this analysis to improve security measures and policies.;1;Monthly;;JIT;KPI-Security-JIT;2
+Security - Identity;Security;Identity;Just-In-Time Access & Delegation;Yes;Exist Already;IT;KPI-Security-JIT-3;Delegations using PIM must be done though automation (minimum);90%;Monthly;Security;;;;;;Provide ongoing security awareness and best practices training to privileged users. This should include the importance of PIM policies, how to securely manage access, and the risks associated with privileged accounts.;1;Monthly;;JIT;KPI-Security-JIT;3
+Security - Identity;Security;Identity;Just-In-Time Access & Delegation;Yes;Exist Already;IT;KPI-Security-JIT-4;The average time taken to approve or reject privileged access requests;Reduce the average approval or rejection time to less than 4 hours;Monthly;Incident Management;;;;;;;;Monthly;;JIT;KPI-Security-JIT;4
